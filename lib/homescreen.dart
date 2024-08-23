@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:weather/weather.dart';
 import 'package:wheather_app/prefclass.dart';
 import 'package:wheather_app/searchscreen.dart';
+import 'package:wheather_app/weatherapikey.dart';
 import 'package:wheather_app/weatherinfo.dart';
-import 'package:wheather_app/const.dart';
 
 class Home_Screen extends StatefulWidget {
   final String city;

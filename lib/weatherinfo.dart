@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather/weather.dart';
-import 'package:wheather_app/const.dart';
+import 'package:wheather_app/weatherapikey.dart';
 
 class Weather_info extends StatefulWidget {
   final Weather? weather;
@@ -65,13 +65,23 @@ class _Weather_infoState extends State<Weather_info> {
         children: [
           if (currentWeather != null && widget.city != null) ...[
             SizedBox(height: 20),
-            Text(
-              widget.city!.toUpperCase(),
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 36,
-                fontWeight: FontWeight.bold,
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  widget.city!.toUpperCase(),
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 36,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Icon(
+                  Icons.location_on,
+                  color: Colors.white,
+                  size: 36,
+                ),
+              ],
             ),
             SizedBox(height: 10),
             Text(
