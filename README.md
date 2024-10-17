@@ -1,58 +1,79 @@
-# weather_app
- 
-Weather App 🌤
-This Flutter application allows users to check the current weather conditions of any city worldwide. The app integrates with the OpenWeatherMap API to provide real-time weather data, including temperature, weather descriptions, humidity levels, and wind speed. It features a clean, responsive UI that adapts seamlessly across both mobile and tablet devices.
+# Flutter Weather App 🌦️
 
-Features
-Real-time Weather Data: Fetches current weather conditions for any city globally using the OpenWeatherMap API.
-Detailed Information: Displays:
-Temperature
-Weather description (e.g., cloudy, sunny)
-Humidity level
-Wind speed
-User-Friendly Interface: Clean and minimalistic UI with responsive design for mobile and tablet devices.
-Search Functionality: Easily search for and view weather data for different cities.
+This Flutter application allows users to check the **current weather conditions** of any city worldwide. It leverages the **OpenWeatherMap API** to fetch real-time weather data, displaying essential information such as **temperature**, **weather description**, **humidity**, and **wind speed**. The app features a clean and **responsive UI** that adapts seamlessly across mobile and tablet devices.
 
-Screenshots
-Folder is created on repo
+## Features
 
-Getting Started
-Prerequisites
-To run this project, you need:
+- 🌍 **Global Weather Data**: Fetches weather information for cities across the globe using the OpenWeatherMap API.
+- 📊 **Real-Time Weather Updates**: Displays current temperature, weather description, humidity levels, and wind speed.
+- 💻 **Responsive Design**: Adapts smoothly to various screen sizes, offering a great user experience on both mobile phones and tablets.
+- 🔍 **Search Functionality**: Allows users to search and view weather data for any city.
+- 📱 **Simple & Clean UI**: Minimalistic interface focused on ease of use.
 
-Flutter SDK: Install Flutter
-An API key from OpenWeatherMap
-Installation
-Clone this repository:
+## Tech Stack
 
+- **Flutter**: The app is built with the Flutter framework.
+- **Dart**: Programming language used for Flutter.
+- **OpenWeatherMap API**: Provides real-time weather data for any city.
 
-git clone https://github.com/yourusername/weather-app.git
-cd weather-app
-Install the dependencies:
+## Screenshots
 
+_Include some relevant screenshots of the app’s UI displaying weather data._
 
-flutter pub get
-Set up the OpenWeatherMap API key:
+## Getting Started
 
-Create a .env file in the project root and add your OpenWeatherMap API key:
+### Prerequisites
 
-OPENWEATHER_API_KEY=your_api_key_here
-Run the app:
+- Flutter SDK: [Install Flutter](https://flutter.dev/docs/get-started/install)
+- An OpenWeatherMap API key: [Get API Key](https://home.openweathermap.org/users/sign_up)
 
+### Installation
 
-flutter run
-API Integration
-This app uses the OpenWeatherMap API to retrieve weather information. You'll need to register and obtain an API key from their website.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/flutter-weather-app.git
+    ```
 
-Example API Call:
+2. Navigate to the project directory:
+    ```bash
+    cd flutter-weather-app
+    ```
 
-https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={your_api_key}
-Packages Used
-http: For making API calls to OpenWeatherMap.
-flutter_dotenv: For managing API keys securely in environment variables.
-provider: For state management across the app.
-Contributing
-Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss any changes or improvements.
+3. Install the required dependencies:
+    ```bash
+    flutter pub get
+    ```
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+4. Set up the OpenWeatherMap API key:
+   - Open `lib/services/weather_service.dart` (or the respective service file).
+   - Replace `your_api_key_here` with your actual OpenWeatherMap API key.
+
+5. Run the app:
+    ```bash
+    flutter run
+    ```
+
+## Usage
+
+1. Enter the name of any city in the search bar to fetch its weather details.
+2. View real-time temperature, weather conditions, humidity, and wind speed.
+
+## Packages Used
+
+- [`http`](https://pub.dev/packages/http): To make API requests to OpenWeatherMap.
+- [`provider`](https://pub.dev/packages/provider): For state management across the app.
+- [`flutter_spinkit`](https://pub.dev/packages/flutter_spinkit): For displaying loading indicators.
+
+## API Integration
+
+The app integrates with the **OpenWeatherMap API** to fetch weather data in real-time. To use the app, you must set up your API key as described above.
+
+- [OpenWeatherMap API Documentation](https://openweathermap.org/api)
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
