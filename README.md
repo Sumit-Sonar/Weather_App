@@ -16,10 +16,6 @@ This Flutter application allows users to check the **current weather conditions*
 - **Dart**: Programming language used for Flutter.
 - **OpenWeatherMap API**: Provides real-time weather data for any city.
 
-## Screenshots
-
-_Include some relevant screenshots of the app’s UI displaying weather data._
-
 ## Getting Started
 
 ### Prerequisites
